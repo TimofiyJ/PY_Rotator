@@ -4,7 +4,8 @@
     <img width="500" src="https://github.com/TimofiyJ/ML_Rotator/assets/44300490/7f8e2793-0762-4fff-a621-90715f13a9eb" alt="banner">
 </p>
 
-Have you ever wanted to rotate your image to the correct angle using just a one-line command? Well, image rotator is solution for your problem!
+**Have you ever wanted to rotate your image to the correct angle using just a one-line command?**
+**Well, image rotator is solution for your problem!**
 
 ## Instruction
 
