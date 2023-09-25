@@ -5,7 +5,8 @@
 </p>
 
 **Have you ever wanted to rotate your image to the correct angle using just a one-line command?**
-<p>**Well, image rotator is solution for your problem!**</p>
+
+**Well, image rotator is solution for your problem!**
 
 ## Instruction
 
