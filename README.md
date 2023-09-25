@@ -29,3 +29,11 @@ Note: IMAGE - path to your image. OUTPUT - path to the script output (rotated pi
 *This is a gif of how the solution works*
 
 ![example](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/a453a309-6621-4b20-824d-0bb35e3f5e6e)
+
+*Before:*
+![6_c](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/8d3e2948-9764-4691-b425-11a222109928)
+
+*After:*
+![outp](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/8840672a-8285-4561-ba34-26bc938123a5)
+
+
