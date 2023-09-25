@@ -1,7 +1,8 @@
 # Image rotator
 
-![image_rotator](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/bc59d2e0-118c-4f1b-b646-f8288cafeafd)
-
+<p align="center">
+    <img width="500" src="https://github.com/TimofiyJ/ML_Rotator/assets/44300490/bc59d2e0-118c-4f1b-b646-f8288cafeafd" alt="banner">
+</p>
 
 **Have you ever wanted to rotate your image to the correct angle using just a one-line command?**
 
@@ -28,12 +29,15 @@ Note: IMAGE - path to your image. OUTPUT - path to the script output (rotated pi
 *This is a gif of how the solution works*
 
 
-![example](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/a453a309-6621-4b20-824d-0bb35e3f5e6e)
+![example](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/1d8d4747-02bf-47d5-94f1-fbc85b4d33fe)
+
 
 *Before: (6_с.png)*
-![6_c](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/8d3e2948-9764-4691-b425-11a222109928)
+![6_c](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/635c9cf2-23bd-449c-a068-ac95d05f0b64)
+
 
 *After:(outp.png)*
-![outp](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/8840672a-8285-4561-ba34-26bc938123a5)
+![outp](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/b623872b-a16c-4328-83bb-aa5fd4699bbc)
+
 
 
