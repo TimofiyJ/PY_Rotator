@@ -6,10 +6,16 @@ import cv2
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
 	help="path to input image file")
+ap.add_argument("-o", "--output", required=True,
+	help="path to output image file")
+
 args = vars(ap.parse_args())
 # load the image from disk
 image = cv2.imread(args["image"])
+output = str((args["output"]))
 
+if output == None:
+	output = "./output.png"
 # convert the image to grayscale and flip the foreground
 # and background to ensure foreground is now "white" and
 # the background is "black"
@@ -25,16 +31,9 @@ thresh = cv2.threshold(gray, 0, 255,
 # compute a rotated bounding box that contains all
 # coordinates
 coords = np.column_stack(np.where(thresh > 0))
-print(coords)
 angle = cv2.minAreaRect(coords)[-1]
-print(cv2.minAreaRect(coords))
 # Convert the rectangle's parameters to integers
 
-rect = cv2.minAreaRect(coords)
-box = np.int0(cv2.boxPoints(rect))
-
-# Draw the rectangle on the image
-cv2.drawContours(image, [box], 0, (0, 255, 0), 2)
 # the `cv2.minAreaRect` function returns values in the
 # range [-90, 0); as the rectangle rotates clockwise the
 # returned angle trends to 0 -- in this special case we
@@ -54,23 +53,11 @@ M = cv2.getRotationMatrix2D(center, angle, 1.0)
 rotated = cv2.warpAffine(image, M, (w, h),
 	flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
 
-# draw the correction angle on the image so we can validate it
-cv2.putText(rotated, "Angle: {:.2f} degrees".format(angle),
-	(10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+
 # show the output image
 print("[INFO] angle: {:.3f}".format(angle))
 
-new_width = 500
-new_height = 500
+cv2.imwrite(output,rotated)
 
-# Use cv2.resize() to resize the image
-resized_image = cv2.resize(image, (new_width, new_height))
-
-cv2.imshow("Input", resized_image)
-cv2.imshow("Rotated", cv2.resize(rotated, (new_width, new_height)))
-
-cv2.drawContours(gray, [box], 0, (255, 255, 255), 2)
-cv2.imshow("Gray", cv2.resize(gray, (new_width, new_height)))
 
 cv2.waitKey(0)
-

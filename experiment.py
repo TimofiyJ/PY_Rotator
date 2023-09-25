@@ -31,6 +31,8 @@ coords = np.column_stack(np.where(thresh > 0))
 x_values = [point[1] for point in coords]
 y_values = [point[0] for point in coords]
 
+rect = cv2.minAreaRect(coords)
+
 
 # Create a scatter plot
 plt.scatter(x_values, y_values, label='Points', color='blue', marker='o')
