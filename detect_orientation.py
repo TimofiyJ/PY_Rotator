@@ -121,5 +121,3 @@ rotated_image.show()
 
 # Save the rotated image to a local file
 cv2.imwrite(output_file_path, rotated_image)
-print("Press any key to exit")
-end = input()

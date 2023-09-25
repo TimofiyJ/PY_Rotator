@@ -53,9 +53,5 @@ M = cv2.getRotationMatrix2D(center, angle, 1.0)
 rotated = cv2.warpAffine(image, M, (w, h),
 	flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
 
-# show the degrees
-print("[INFO] angle: {:.3f}".format(angle))
-
 cv2.imwrite(output,rotated)
-print("Press any key to exit")
-end = input()
+cv2.waitKey(0)
