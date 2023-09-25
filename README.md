@@ -23,4 +23,8 @@ pip install -r requirements.txt
 python .\correct_skew.py -i IMAGE -o OUTPUT
 ```
 Note: IMAGE - path to your image. OUTPUT - path to the script output (rotated picture)
-https://github.com/olekscode/UkrainianOCR
+
+**That's it! Only with the help of one command you installed all the necessary dependencies and your script is ready-to-run!**
+*This is a gif of how the solution works*
+
+![example](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/a453a309-6621-4b20-824d-0bb35e3f5e6e)
