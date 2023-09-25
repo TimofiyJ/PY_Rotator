@@ -57,6 +57,5 @@ rotated = cv2.warpAffine(image, M, (w, h),
 print("[INFO] angle: {:.3f}".format(angle))
 
 cv2.imwrite(output,rotated)
-
-
-cv2.waitKey(0)
+print("Press any key to exit")
+end = input()
