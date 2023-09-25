@@ -28,6 +28,7 @@ Note: IMAGE - path to your image. OUTPUT - path to the script output (rotated pi
 
 *This is a gif of how the solution works*
 
+
 ![example](https://github.com/TimofiyJ/ML_Rotator/assets/44300490/a453a309-6621-4b20-824d-0bb35e3f5e6e)
 
 *Before: (6_с.png)*
